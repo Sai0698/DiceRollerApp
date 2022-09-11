@@ -6,31 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/TvDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="@dimen/dimen36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455"
-        tools:text="1" />
-
     <Button
         android:id="@+id/BTroll"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen36dp"
         android:text="@string/roll"
-        app:layout_constraintTop_toBottomOf="@+id/TvDisplay"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/dimen20dp"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="401dp" />
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVdisplay" />
+
+    <ImageView
+        android:id="@+id/IVdisplay"
+        android:layout_width="@dimen/dimen160dp"
+        android:layout_height="@dimen/dimen160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/IVdisplay2"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        tools:srcCompat="@drawable/dice_1"
+        android:contentDescription="@string/imageview" />
+
+    <ImageView
+        android:id="@+id/IVdisplay2"
+        android:layout_width= "@dimen/dimen160dp"
+        android:layout_height="@dimen/dimen160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toEndOf="@id/IVdisplay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        tools:srcCompat="@drawable/dice_1"
+        android:contentDescription="@string/imageview"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

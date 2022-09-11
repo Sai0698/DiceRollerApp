@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">DiceRollerApp</string>
     <string name="roll">Roll</string>
+    <string name="image">image</string>
+    <string name="imageview">Imageview</string>
 </resources>
